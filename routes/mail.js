@@ -33,7 +33,7 @@ router.post('/', async (req, res, next) => {
 `;
 	try {
 		await transporter.sendMail({
-			from: `"${process.env.NAME_SENDER} 👻" <${process.env.EMAIL_SENDER}>`,
+			from: `1147 group form request <${process.env.EMAIL_SENDER}>`,
 			to: process.env.EMAIL_RECEIVER,
 			subject: process.env.MESSAGE_SUBJECT,
 			text: messageText,
